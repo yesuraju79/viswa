@@ -6,7 +6,7 @@ metadata:
 spec:
   replicas: 1
   strategy:
-    type: RollingUpdat
+    type: RollingUpdate
   selector:
     matchLabels:
       app: testapp
@@ -18,8 +18,8 @@ spec:
         ver: 1.0.0
     spec:
       containers:
-        - name: testapp
+        - name: httpd
           image: httpd:latest
           ports:
-            containerPort: 80
-            protocol: TCP
+             - containerPort: 80
+                protocol: TCP
