@@ -16,8 +16,10 @@ spec:
         ver: 1.0.0
     spec:
       containers:
-        - name: httpd
-          image: httpd:latest
+        - name: testapp
+          image: shaikkhajaibrahim/testapp:1.0.0
+          imagePullPolicy: Always
+      ports:
           ports:
             - containerPort: 80
               protocol: TCP
