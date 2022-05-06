@@ -1,0 +1,9 @@
+apiVersion: getambassador.io/v3alpha1
+kind: Host
+metadata:
+  name: minimal-host
+spec:
+  hostname: host.example.com
+  mappingSelector:
+    matchLabels:
+      examplehost: host
