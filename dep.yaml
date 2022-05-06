@@ -20,6 +20,5 @@ spec:
           image: shaikkhajaibrahim/testapp:1.0.0
           imagePullPolicy: Always
       ports:
-          ports:
-            - containerPort: 80
-              protocol: TCP
+       - containerPort: 80
+         protocol: TCP
