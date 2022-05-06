@@ -2,7 +2,7 @@
 apiVersion: getambassador.io/v3alpha1
 kind:  Mapping
 metadata:
-  name:  httpbin-mapping
+  name: mapping
 spec:
-  prefix: /httpbin/
-  service: http://httpbin.org
+  prefix: /backend/
+  service: my-service
