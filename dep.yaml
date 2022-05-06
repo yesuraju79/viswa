@@ -5,6 +5,8 @@ metadata:
   name: dep
 spec:
   replicas: 1
+  strategy:
+    type: RollingUpdat
   selector:
     matchLabels:
       app: testapp
@@ -17,8 +19,7 @@ spec:
     spec:
       containers:
         - name: testapp
-          image: docker.io/datawire/ambassador-auth-service:2.0.0
-          imagePullPolicy: Always
+          image: httpd:latest
           ports:
             containerPort: 80
             protocol: TCP
