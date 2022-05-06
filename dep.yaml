@@ -16,7 +16,7 @@ spec:
         ver: 1.0.0
     spec:
       containers:
-        - name: testapp
+        - name: httpd
           image: httpd:latest
           ports:
             - containerPort: 80
