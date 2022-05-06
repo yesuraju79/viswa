@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: dep
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: testapp
@@ -19,6 +19,6 @@ spec:
         - name: testapp
           image: shaikkhajaibrahim/testapp:1.0.0
           imagePullPolicy: Always
-      ports:
-       - containerPort: 80
-         protocol: TCP
+          ports:
+            - containerPort: 80
+              protocol: TCP
